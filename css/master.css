@@ -109,6 +109,19 @@ ul {
     background-color: var(--hover-background);
 }
 
+
+ul h4 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.description {
+    font-size: 13px;
+    margin: 0;
+    color: #b0b3b8;
+    font-weight: 300;
+}
+
 /* End Components */
 
 /* Start Navigation Bar */
@@ -210,6 +223,10 @@ nav .right > li:last-of-type .menu {
 
 nav .right li:last-of-type .add {
     display: none;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 nav .right li:last-of-type span {
@@ -222,7 +239,7 @@ nav .right li:last-of-type span {
 
 @media (max-width: 1099px) {
     nav .right li:last-of-type .add {
-        display: block;
+        display: flex;
     }
     
     nav .right li:last-of-type .menu {
@@ -318,16 +335,18 @@ nav .right li:last-of-type span {
     height: 35px;
 }
 
-.content .col:last-of-type > ul h4 {
-    font-size: 15px;
-    margin: 0;
+#plus-menu {
+    width: 360px;
+    background: var(--widgets-background);
+    z-index: 1000;
 }
 
-.content .col:last-of-type > ul span {
-    font-size: 13px;
-    margin: 0;
-    color: #b0b3b8;
-    font-weight: 300;
+#plus-menu li {
+    height: 54px;
+}
+
+.show-plusMenu {
+    display: block;
 }
 
 /* Center */

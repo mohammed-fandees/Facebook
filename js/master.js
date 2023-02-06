@@ -2,6 +2,7 @@ let showMenu = document.querySelector('#ex-menu');
 let menu = document.querySelector('.extra-menu');
 
 showMenu.addEventListener('click', _ => {
+    plusMenu.classList.remove('show-plusMenu');
     menu.classList.toggle('show-extra-menu');
 });
 // 
@@ -36,4 +37,12 @@ wedget.addEventListener('click', _ => {
         text.innerHTML = 'See more';
         icon.style.cssText = 'transform: rotate(0deg);'
     }
+});
+
+let plus = document.querySelector('#plus-button');
+let plusMenu = document.querySelector('#plus-menu');
+
+plus.addEventListener('click', _ => {
+    menu.classList.remove('show-extra-menu');
+    plusMenu.classList.toggle('show-plusMenu');
 });
