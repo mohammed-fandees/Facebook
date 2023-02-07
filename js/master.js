@@ -46,3 +46,16 @@ plus.addEventListener('click', _ => {
     menu.classList.remove('show-extra-menu');
     plusMenu.classList.toggle('show-plusMenu');
 });
+
+
+// Initialize Swiper
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+      
+  });

@@ -7,11 +7,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/all.min.css">        
         <link rel="stylesheet" href="css/normalize.css">        
         <link rel="stylesheet" href="css/framwork.css">        
         <link rel="stylesheet" href="css/master.css">        
         <title>Facebook</title>
+         <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     </head>
     <body>
         <!-- navbar -->
@@ -29,10 +32,10 @@
             </ul>
             <!-- center -->
             <!-- <ul class="center">
-                <li><i class="fa-solid fa-house"></i></li>
-                <li><i class="fa-solid fa-tv"></i></li>
-                <li><i class="fa-solid fa-store"></i></li>
-                <li><i class="fa-solid fa-gamepad"></i></li>
+                <li class="larg-lis"><i class="fa-solid fa-house"></i></li>
+                <li class="larg-lis"><i class="fa-solid fa-tv"></i></li>
+                <li class="larg-lis"><i class="fa-solid fa-store"></i></li>
+                <li class="larg-lis"><i class="fa-solid fa-gamepad"></i></li>
             </ul> -->
             <!-- right -->
             <ul class="right">
@@ -356,12 +359,70 @@
                 </ul>
             </div>
             <div class="c-container">
-
+                <div class="wedgets stories">
+                    <ul>
+                        <li class="larg-lis active-large-li"><i class="fa-solid fa-book-open"></i> Stories</li>
+                        <li class="larg-lis"><i class="fa-solid fa-clapperboard"></i> Reels</li>
+                        <li class="larg-lis"><i class="fa-solid fa-video"></i> Rooms</li>
+                    </ul>
+                     <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide create-story">
+                                <img src="imgs/my img.jpg" alt="">
+                                <div class="add-story">Create story <div class="add-icon"><i class="fa-solid fa-plus"></i></div></div>
+                            </div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
-            <div class="r-container">
-
-            </div>
+            <!-- <div class="r-container"> -->
+                <div class="l-container">
+                    <ul class="left-wedgets wedgs">
+                        <li><img src="imgs/my img.jpg" alt="my img"> <span>Mohammed S. Fandees</span></li>
+                        <li><img src="imgs/2.png" alt="my img"> <span>Friends</span></li>
+                        <li><img src="imgs/3.png" alt="my img"> <span>Groups</span></li>
+                        <li><img src="imgs/6.png" alt="my img"> <span>Most Recent</span></li>
+                        <li><img src="imgs/13.png" alt="my img"> <span>Marketplace</span></li>
+                        <li><img src="imgs/10.png" alt="my img"> <span>Watch</span></li>
+                        <li><img src="imgs/15.png" alt="my img"> <span>Memories</span></li>
+                        <li><img src="imgs/16.png" alt="my img"> <span>Saved</span></li>
+                        <li><img src="imgs/18.png" alt="my img"> <span>Ad Center</span></li>
+                        <li><img src="imgs/17.png" alt="my img"> <span>Ads Manager</span></li>
+                        <li><img src="imgs/19.png" alt="my img"> <span>Blood Donations</span></li>
+                        <li><img src="imgs/20.png" alt="my img"> <span>Climate Science Center</span></li>
+                        <li><img src="imgs/21.png" alt="my img"> <span>Crisis response</span></li>
+                        <li><img src="imgs/22.png" alt="my img"> <span>Emotional Health</span></li>
+                        <li><img src="imgs/1.png" alt="my img"> <span>Events</span></li>
+                        <li><img src="imgs/5.png" alt="my img"> <span>Favorites</span></li>
+                        <li><img src="imgs/23.png" alt="my img"> <span>Fundraisers</span></li>
+                        <li><img src="imgs/8.png" alt="my img"> <span>Gaming Video</span></li>
+                        <li><img src="imgs/11.png" alt="my img"> <span>Live Video</span></li>
+                        <li><img src="imgs/24.png" alt="my img"> <span>Messenger Kids</span></li>
+                        <li><img src="imgs/12.png" alt="my img"> <span>Orders and payments</span></li>
+                        <li><img src="imgs/7.png" alt="my img"> <span>Pages</span></li>
+                        <li><img src="imgs/9.png" alt="my img"> <span>Play Games</span></li>
+                        <li><img src="imgs/14.png" alt="my img"> <span>Recent ad activity</span></li>
+                        <li><img src="imgs/14.png" alt="my img"> <span>hidden</span></li>
+                        <li class="toggle"><i id="arr-icon" class="fa-solid fa-chevron-down"></i> <span id="see">See more</span></li>
+                    </ul>
+                    <ul class="shortcuts">
+                        <li></li>
+                    </ul>
+                </div>
+            <!-- </div> -->
         </div>
+
         <script src="js/master.js"></script>
     </body>
 </html>
