@@ -12,7 +12,7 @@
   --button-background: #3a3b3c;
   --hover-background: #4e4f50;
   --border-color: #393a3b;
-  --tone-color: var(--tone-color);
+  --tone-color: #e4e6eb;
   --ttwo-color: #b0b3b8;
   --main-box-shadow: 0 2px 15px rgb(0 0 0 /10%);
   --hover-box-shadow: 0 2px 15px rgb(0 0 0 /20%);
@@ -51,8 +51,9 @@ ul {
 /* Start Components */
 
 .container {
-  padding: 15px 0 !important;
+  padding: 15px 0;
   max-width: 250px;
+  width: 25%;
 }
 
 .lis li {
@@ -446,10 +447,6 @@ nav .left #l-arrow:hover {
 
 /* left */
 
-.l-container {
-  padding: 15px;
-  width: 300px;
-}
 
 .l-container .left-ul {
   height: 414px;
@@ -723,7 +720,7 @@ nav .left #l-arrow:hover {
 .req .text h5 {
   margin: 0;
   font-size: 15px;
-  color: var(--tone-color);
+  color: var(--tone-color) !important;
 }
 
 .req .text span {
@@ -767,7 +764,7 @@ nav .left #l-arrow:hover {
 }
 
 .l-container span {
-  color: var(--ttwo-color) !important;
+  color: var(--ttwo-color);
 }
 
 .friends-events .wedges {
@@ -813,10 +810,6 @@ nav .left #l-arrow:hover {
 
 .con-events i:hover {
   background: var(--hover-background);
-}
-
-.right {
-  flex-direction: column;
 }
 
 .right img {
