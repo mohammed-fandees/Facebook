@@ -24,7 +24,7 @@ arrow.addEventListener('click', _ => {
 });
 
 let wedget = document.querySelector('.toggle');
-let ul = document.querySelector('.left-wedgets');
+let ul = document.querySelector('.left-ul');
 let text = document.querySelector('#see');
 let icon = document.querySelector('#arr-icon');
 
